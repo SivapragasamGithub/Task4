@@ -1,0 +1,48 @@
+<html>
+    <head>Sum of all numbers in array</head>
+    <body>
+        <script>
+            
+            //Anonymous
+            var func = function () {
+    
+            var ar = [1, 2, 3, 4, 5]
+            var sum = ar.reduce(function(a, b)
+           {
+            return a + b;
+            });
+           console.log(sum);
+           }
+           func()
+       
+           //IIFE
+           (function () 
+           {
+          let sum = [1, 2, 3, 4].reduce(add, 5);
+          function add(accumulator, a)
+          {
+         return accumulator + a;
+        }
+        console.log(sum);
+        })()
+
+        //Arrow function
+
+        var a=[1,2,3,4,5,6,7,8,9];
+        var sum=0;
+        let ghi=(a)=>
+       {
+       for(let i=0; i<a.length; i++)
+       {
+       sum=sum+a[i];
+       }
+    return sum;
+       }
+    console.log(ghi(a));
+
+
+          
+
+        </script>
+    </body>
+</html>

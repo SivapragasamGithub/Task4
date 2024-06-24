@@ -1,0 +1,54 @@
+<HTML>
+    <HEAD>Return all the palindrome in an array</HEAD>
+    <body>
+        <script>
+            //Anonymous
+
+         var isPalindrome = function () 
+         {
+         var myArray = ['viicc', 'racecar', 'honda', 'malayalam'];
+         var arr = myArray.filter(function (c, d)
+         {
+        var palindrome = c.split('').reverse().join('');
+         if (c == palindrome) 
+        {
+         console.log(myArray[d]);
+        }
+         });
+        }
+        isPalindrome()
+
+        //IIFE
+
+        ( function () 
+       {
+      var myArray = ['viicc', 'racecar', 'honda', 'malayalam'];
+      var arr = myArray.filter(function (c, d)
+      {
+      var palindrome = c.split('').reverse().join('');
+      if (c == palindrome)
+      {
+      console.log(myArray[d]);
+      }
+      });
+      })()
+
+      //Arrow function
+       
+      var arr = ['viicc', 'racecar', 'honda', 'malayalam'];
+      Palindrome = (arr, n) =>
+    {
+        
+        for (var i = 0; i < n; i++)
+        {
+            var ans = isPalindrome(arr[i]);
+            if (ans == false)
+                return false;
+        }
+        return true;
+        }
+
+
+        </script>
+    </body>
+</HTML>

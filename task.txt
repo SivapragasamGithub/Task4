@@ -41,3 +41,28 @@ for (var i = 0; i < str.length; i++){
 }
 console.log(str.join(' '));
 })("hello there how are you")
+
+
+Sum of all numbers in an array
+
+var func = function () {
+    
+    Anonymous function
+
+  var ar = [1, 2, 3, 4, 5]
+  var sum = ar.reduce(function(a, b){
+      return a + b;
+  });
+  console.log(sum);
+}
+func()
+
+IIFE 
+
+(function () {
+  let sum = [1, 2, 3, 4].reduce(add, 5);
+  function add(accumulator, a) {
+    return accumulator + a;
+  }
+  console.log(sum);
+})()

@@ -1,0 +1,43 @@
+
+Print odd numbers in an array Anonymous function
+
+var arr=[0,1,2,3,4,5,6,7,8,9];
+
+var odd = function () {
+  var odd= arr.filter(num => num %2 ==1)
+  console.log(odd)
+}
+odd()
+
+IIFE function
+
+var a=[0,1,2,3,4,5,6,7,8,9];
+
+(function ()  {
+
+  var odd= a.filter(num => num %2 ==1);
+return odd;
+
+  })();
+
+Convert all the strings to title caps in a string array 
+
+ Anonymous function
+ 
+ var str = function () {
+  var arr = "hello there how are you"
+  var titlecase = arr.toLowerCase().replace(/\b(\w)/g, s => s.toUpperCase());
+  console.log(titlecase)
+}
+str()
+
+
+Arrow function
+
+(function (str) {
+str = str.toLowerCase().split(' ');
+for (var i = 0; i < str.length; i++){
+  str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+}
+console.log(str.join(' '));
+})("hello there how are you")

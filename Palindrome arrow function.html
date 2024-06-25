@@ -1,0 +1,25 @@
+<HTML>
+    <HEAD>Return all the palindrome in an array</HEAD>
+    <body>
+        <script>
+          
+
+      //Arrow function
+       
+      var arr = ['viicc', 'racecar', 'honda', 'malayalam'];
+      Palindrome = (arr, n) =>
+    {
+        
+        for (var i = 0; i < n; i++)
+        {
+            var ans = isPalindrome(arr[i]);
+            if (ans == false)
+                return false;
+        }
+        return true;
+        }
+
+
+        </script>
+    </body>
+</HTML>
